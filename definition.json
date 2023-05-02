@@ -1,0 +1,112 @@
+{
+"fields":[
+    {
+    "field": "Specimen collector sample ID",
+    "ontology_id": "GENEPIO:0001123",
+    "definition": "The user-defined name for the sample.",
+    "guidance": "Original ID given to the sample at the primary laboratory",
+    "expected_value_type": "Alpha-numeric value",
+    "benefits": "Linkage of sample with genomic, lab and epi data",
+    "considerations_and_privacy": "Can be considered Personal Health Identifiable (PHI) information. Identifier tracking and establishing chain of custody. Public facing identifier can be used as replacement when sharing (such as a hash ID)"
+    },
+    {
+    "field": "Specimen source ID",
+    "ontology_id": "GENEPIO:0100696",
+    "definition": "The identifier assigned to the host or environment from which the specimen was derived (e.g. host subject ID, case ID, environmental site ID).",
+    "guidance": "Provide the identifier for the source of the sample such as the case ID or site ID.",
+    "expected_value_type": "Alpha-numeric value",
+    "benefits": "Allow for deduplication of cases",
+    "considerations_and_privacy": "Can be considered Personal Health Identifiable (PHI) information. Traceability. Public facing identifier can be used as replacement when sharing (such as a hash ID)"
+    },
+    {
+    "field": "geo_loc name (country)",
+    "ontology_id": "GENEPIO:0001181",
+    "definition": "The country where the sample was collected.",
+    "guidance": "Use an ontology such as the Gazateer (GAZ). Equivalent to ISO3166-1",
+    "expected_value_type": "Permitted values",
+    "benefits": "Spatio-temporal analysis",
+    "considerations_and_privacy": "If event counts in a country are low, perturbation may be required. International Health Regulations reporting requirements"
+    },
+    {
+    "field": "geo_loc name (state/province/region)",
+    "ontology_id": "GENEPIO:0001185",
+    "definition": "The state/province/region where the sample was collected.",
+    "guidance": "Use an ontology such as the Gazateer ontology (GAZ). Equivalent to ISO3166-2",
+    "expected_value_type": "Permitted values",
+    "benefits": "Spatio-temporal analysis",
+    "considerations_and_privacy": "If event counts in a state/province/region are low, perturbation may be required"
+    },
+    {
+    "field": "Sample collected by",
+    "ontology_id": "GENEPIO:0001153",
+    "definition": "The name of the agency that collected the original sample.",
+    "guidance": "The official organization name should be used (avoid abbreviations, alternate names as much as possible).",
+    "expected_value_type": "Auto complete controlled list",
+    "benefits": "Recognition and provenance",
+    "considerations_and_privacy": "Care should be taken with regards to potential geographical identification associated with organizational name. Provenance. Contact for follow-up"
+    },
+    {
+    "field": "Sequenced by",
+    "ontology_id": "GENEPIO:0100416",
+    "definition": "The name of the agency that generated the sequence.",
+    "guidance": "The official organization name should be used (avoid abbreviations, alternate names as much as possible).",
+    "expected_value_type": "Auto complete controlled list",
+    "benefits": "Recognition and provenance",
+    "considerations_and_privacy": "Negligible privacy concerns."
+    },
+    {
+    "field": "Sequence submitted by",
+    "ontology_id": "GENEPIO:0001159",
+    "definition": "The name of the agency that submitted the sequence to a database.",
+    "guidance": "The official organization name should be used (avoid abbreviations, alternate names as much as possible).",
+    "expected_value_type": "Auto complete controlled list",
+    "benefits": "Recognition and provenance",
+    "considerations_and_privacy": "Negligible privacy concerns"
+    },
+    {
+    "field": "Data custodian organization name",
+    "ontology_id": "GENEPIO:0100695",
+    "definition": "The name of the organization with authority over how the sample and its associated information can be used. ",
+    "guidance": "The official organization name should be used (avoid abbreviations, alternate names as much as possible).",
+    "expected_value_type": "Auto complete controlled list",
+    "benefits": "Jurisdictional authority over data use",
+    "considerations_and_privacy": "Care should be taken with regards to potential geographical identification associated with organizational name."
+    },
+    {
+    "field": "Sample collection date",
+    "ontology_id": "GENEPIO:0001174",
+    "definition": "Date on which the sample was collected ",
+    "guidance": "For public health analyses this should be defined to the day.",
+    "expected_value_type": "ISO 8601 format (YYYY-MM-DD)",
+    "benefits": "Spatio-temporal analysis",
+    "considerations_and_privacy": "If event counts over a specific time period are low, perturbation may be required"
+    },
+    {
+    "field": "Organism",
+    "ontology_id": "GENEPIO:0001191",
+    "definition": "Taxonomic name of the organism.",
+    "guidance": "Use an ontology such as the NCBI Taxonomy Ontology (NCBITaxon).",
+    "expected_value_type": "Permitted values",
+    "benefits": "Benefits all public health analyses",
+    "considerations_and_privacy": "Taxonomic determinations may change depending on the method (PCR, culture, WGS etc) and reference database. The “organism” field in the sample record should reflect the taxonomic designation based on sequencing. The name of the species should be provided. More granular information (e.g. serotype, sequence type, lineage) should be included in other fields."
+    },
+    {
+    "field": "Purpose of sampling",
+    "ontology_id": "GENEPIO:0001198",
+    "definition": "The reason that the sample was collected.",
+    "guidance": "Use an ontology such as the Genomic Epidemiology Ontology (GenEpiO).",
+    "expected_value_type": "Permitted values",
+    "benefits": "Informs potential sampling strategy bias",
+    "considerations_and_privacy": "May have identifiability concerns when used in conjunction with other fields (i.e. geographic and temporal information)."
+    },
+    {
+    "field": "Purpose of sequencing",
+    "ontology_id": "GENEPIO:0001445",
+    "definition": "The reason that the sample was sequenced.",
+    "guidance": "Use an ontology such as the Genomic Epidemiology Ontology (GenEpiO).",
+    "expected_value_type": "Permitted values",
+    "benefits": "Informs potential sequencing strategy bias",
+    "considerations_and_privacy": "May have identifiability concerns when used in conjunction with other fields (i.e. geographic and temporal information)."  
+    }      
+]
+}
