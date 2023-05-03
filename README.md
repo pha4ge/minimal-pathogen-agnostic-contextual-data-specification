@@ -1,5 +1,25 @@
 # Minimal Pathogen Agnostic Contextual Data Specification
-An international minimal metadata standard for public health and One Health genomic surveillance.
+This specification comprises an international minimal metadata standard for public health and One Health genomic surveillance,
+reusable across pathogen and project initiatives globally, for use in single isolate as well as metagenomic sequencing.
+
+This work has been developed by a group of participants at the 9th Microbes and Food Safety Bioinformatics Hackathon held in Cambridge, UK in May 2023.
+
+## Rationale
+Metadata is crucial for effective genomic surveillance in public health as it provides valuable information about the
+samples being analyzed, and it allows for data sharing and interoperability between different organizations and
+jurisdictions. 
+However, there are a few challenges to overcome, such as combining data from different sources,
+establishing trust in data sharing, and dealing with data standards which may not be designed for public health.
+Moreover, data integration needs to be timely, as public health emergencies happen in a quicker timescale than academic
+research work, and metadata is collected and held by different organizations with varying levels of granularity.  
+
+The aim of this work is to present a framework that can be applied across public health surveillance, regardless of the
+pathogen or sequence type. The framework emphasizes the importance of well-documented and stored sequences and their
+associated metadata, and seeks to make it easier for decision makers and data management personnel to understand the
+benefits of such documentation.
+
+## Tables
+
 > Table 1: Minimal contextual data requirements for public health and One Health surveillance 
 
 | Field | Ontology ID | Definition | Guidance | Expected Value Type | Benefits | Considerations and Privacy |
